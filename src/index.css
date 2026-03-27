@@ -14,21 +14,23 @@
   --font-sans: 'Inter', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background-color: #080808;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 .font-display {
