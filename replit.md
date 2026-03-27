@@ -4,8 +4,8 @@ A modern, premium DJ website for DJ Chrissy G (djshakeywakey.co.uk) — built wi
 
 ## Stack
 
-- **React 19** with React Router v7 for multi-page routing
-- **Vite** for fast dev server and builds
+- **React 18.3.1** with React Router v7 for multi-page routing
+- **Vite 6** for fast dev server and builds (using @vitejs/plugin-react-swc)
 - **Tailwind CSS v4** (via @tailwindcss/vite plugin) for styling
 - **Lucide React** for icons
 - Custom inline SVG for social icons (Instagram, YouTube, WhatsApp)
@@ -25,6 +25,7 @@ A modern, premium DJ website for DJ Chrissy G (djshakeywakey.co.uk) — built wi
 - Scroll-triggered fade-in animations via IntersectionObserver
 - Parallax hero on homepage
 - Transparent navbar that becomes solid on scroll
+- Custom CSS animations (not Tailwind animate-* utilities) to prevent CSS regeneration loops
 
 ## Images
 
@@ -42,6 +43,13 @@ All images are stored in `/public/images/`:
 
 - Email: bookings@djshakeywakey.co.uk
 - DJ Packages: DJ Only / DJ + Decks & Speakers / Full Package (decks, speakers, lights, smoke, lasers, Insta360)
+
+## Technical Notes
+
+- React 18 (not 19) is required — React 19's new `ReactSharedInternals.H` dispatcher is incompatible with Vite 6's dep pre-bundler in this environment
+- `server.watch.ignored` excludes `.local/**` (Replit system files) to prevent constant page reloads
+- `resolve.dedupe` ensures React is not duplicated across pre-bundled chunks
+- Custom CSS animations defined in `index.css` instead of Tailwind `animate-*` utilities
 
 ## Running
 
