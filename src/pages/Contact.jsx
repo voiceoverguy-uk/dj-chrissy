@@ -134,12 +134,13 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-white/50 text-xs tracking-widest uppercase mb-2" htmlFor="eventDate">
-                      Date of Event
+                      Date of Event *
                     </label>
                     <input
                       id="eventDate"
                       name="eventDate"
                       type="date"
+                      required
                       value={form.eventDate}
                       onChange={handleChange}
                       className="w-full bg-[#111] border border-[#222] text-white text-sm px-4 py-3 focus:outline-none focus:border-[#D4A017] transition-colors"
@@ -148,11 +149,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="block text-white/50 text-xs tracking-widest uppercase mb-2" htmlFor="eventType">
-                      Type of Event
+                      Type of Event *
                     </label>
                     <select
                       id="eventType"
                       name="eventType"
+                      required
                       value={form.eventType}
                       onChange={handleChange}
                       className="w-full bg-[#111] border border-[#222] text-white text-sm px-4 py-3 focus:outline-none focus:border-[#D4A017] transition-colors"
@@ -170,12 +172,13 @@ export default function Contact() {
 
                 <div>
                   <label className="block text-white/50 text-xs tracking-widest uppercase mb-2" htmlFor="message">
-                    Message
+                    Message *
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={5}
+                    required
                     value={form.message}
                     onChange={handleChange}
                     placeholder="Tell us about your event, approximate guest numbers, music preferences..."
