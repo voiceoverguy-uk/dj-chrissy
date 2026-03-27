@@ -50,13 +50,13 @@ export default function Home() {
       <section className="relative flex items-center justify-center overflow-hidden" style={{ height: '100vh', minHeight: '700px' }}>
         <div
           ref={heroRef}
-          className="absolute inset-0 bg-center bg-cover will-change-transform scale-110"
+          className="absolute inset-0 bg-center bg-cover scale-110"
           style={{ backgroundImage: "url('/images/hero-confetti.jpg')" }}
         />
         <div className="hero-overlay absolute inset-0" />
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <p className="text-[#D4A017] text-xs md:text-sm tracking-[0.4em] uppercase font-semibold mb-6 animate-pulse">
+          <p className="text-[#D4A017] text-xs md:text-sm tracking-[0.4em] uppercase font-semibold mb-6 text-pulse">
             Wakefield's Feel-Good Party Specialist
           </p>
           <h1 className="font-display text-7xl md:text-[9rem] lg:text-[11rem] leading-none text-white mb-6">
@@ -79,10 +79,12 @@ export default function Home() {
 
         <a
           href="#about-teaser"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/40 hover:text-[#D4A017] transition-colors animate-bounce"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/40 hover:text-[#D4A017] transition-colors"
           aria-label="Scroll down"
         >
-          <ChevronDown size={32} />
+          <span className="bounce-scroll block">
+            <ChevronDown size={32} />
+          </span>
         </a>
       </section>
 

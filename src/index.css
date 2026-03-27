@@ -170,3 +170,21 @@ body {
   background: #D4A017;
   border-radius: 3px;
 }
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.text-pulse {
+  animation: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes bounce-arrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.bounce-scroll {
+  animation: bounce-arrow 1.8s ease-in-out infinite;
+}
