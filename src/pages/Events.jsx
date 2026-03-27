@@ -23,7 +23,7 @@ const events = [
     date: '1st November 2025',
     time: '3pm till 8pm',
     venue: 'Home Over 30s Day Clubbing',
-    description: 'The ultimate over-30s day clubbing experience. Dance anthems, club classics, 90s and 00s hits — hands in the air, smiles on faces.',
+    description: 'The ultimate over-30s day clubbing experience. Dance anthems, club classics, 90s and 00s hits - hands in the air, smiles on faces.',
     image: '/images/hero-confetti.jpg',
     tag: 'Club Night',
   },
@@ -43,7 +43,7 @@ const events = [
     date: '31st December 2025',
     time: '7pm Till Late',
     venue: 'Thornhill Cricket & Bowling Club',
-    description: 'Two rooms of music — Members Bar with all your favourite hits through the decades, and the Function Room with dance anthems, club classics, 90s and 00s hits. Party games, drink offers and a chance to win £100 cash!',
+    description: 'Two rooms of music - Members Bar with all your favourite hits through the decades, and the Function Room with dance anthems, club classics, 90s and 00s hits. Party games, drink offers and a chance to win £100 cash!',
     image: '/images/nye-party.jpg',
     tag: 'NYE Special',
   },
@@ -53,7 +53,7 @@ const events = [
     date: 'Your Date',
     time: 'Your Time',
     venue: 'Your Venue',
-    description: 'From the first dance to the last song of the night — a perfectly curated soundtrack for your most important day, tailored to you and your guests.',
+    description: 'From the first dance to the last song of the night - a perfectly curated soundtrack for your most important day, tailored to you and your guests.',
     image: '/images/dance-floor.jpg',
     tag: 'Wedding',
   },
@@ -85,7 +85,7 @@ export default function Events() {
               <h2 className="font-display text-5xl md:text-7xl text-white mb-4">DJ Events</h2>
               <div className="gold-line mx-auto mb-6" />
               <p className="text-white/50 max-w-xl mx-auto text-sm leading-relaxed">
-                From intimate weddings to massive club nights — every event is crafted with precision, passion, and pure party energy.
+                From intimate weddings to massive club nights - every event is crafted with precision, passion, and pure party energy.
               </p>
             </div>
           </AnimatedSection>
@@ -146,7 +146,7 @@ export default function Events() {
               <h2 className="font-display text-5xl md:text-7xl text-white mb-4">Gallery</h2>
               <div className="gold-line mx-auto mb-6" />
               <p className="text-white/50 max-w-2xl mx-auto text-sm leading-relaxed">
-                Step into the world of DJ Chrissy G — capturing the energy, fun, and professionalism that define every event. From pulsing dancefloors to behind-the-scenes shots at the DJ booth.
+                Step into the world of DJ Chrissy G - capturing the energy, fun, and professionalism that define every event. From pulsing dancefloors to behind-the-scenes shots at the DJ booth.
               </p>
             </div>
           </AnimatedSection>

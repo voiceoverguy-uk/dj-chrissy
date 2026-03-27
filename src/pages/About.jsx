@@ -20,7 +20,7 @@ const equipment = [
   { icon: Headphones, label: 'Pioneer DJ Equipment', desc: 'Trusted industry-standard Pioneer decks and mixers' },
   { icon: Speaker, label: 'Full Sound System', desc: 'Crystal-clear audio at any venue, any size' },
   { icon: Zap, label: 'Smoke Machine & FX', desc: 'Atmospheric effects that add energy to any room' },
-  { icon: Lightbulb, label: 'Dynamic Lighting', desc: 'Strobes, moving heads — creating a true club vibe' },
+  { icon: Lightbulb, label: 'Dynamic Lighting', desc: 'Strobes, moving heads - creating a true club vibe' },
   { icon: Camera, label: 'Insta360 Video', desc: 'Capturing the party from every angle' },
   { icon: Shield, label: 'Fully Insured', desc: 'Professionally presented and fully insured' },
 ]
@@ -62,7 +62,7 @@ export default function About() {
               Specialising in <span className="text-[#D4A017] font-semibold">Dance, Club, Trance, House, R&B, Soul, Old School and Motown</span>, Chrissy blends timeless grooves with floor-filling anthems, keeping crowds moving from the first track to the last.
             </p>
             <p className="text-white/70 leading-relaxed text-base mb-10">
-              Professional, energetic and always fun — DJ Chrissy G brings the music, the atmosphere and the full experience, turning every event into a night to remember.
+              Professional, energetic and always fun - DJ Chrissy G brings the music, the atmosphere and the full experience, turning every event into a night to remember.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-10">
@@ -160,7 +160,7 @@ export default function About() {
             <div className="bg-[#111] border border-[#1e1e1e] p-6">
               <p className="text-[#D4A017] text-xs tracking-widest uppercase font-semibold mb-2">Bespoke Packages</p>
               <p className="text-white/60 text-sm leading-relaxed">
-                Bespoke music packages available to match themes, special moments, first dances, corporate branding and more — ensuring every event has its own unique soundtrack.
+                Bespoke music packages available to match themes, special moments, first dances, corporate branding and more - ensuring every event has its own unique soundtrack.
               </p>
             </div>
           </AnimatedSection>

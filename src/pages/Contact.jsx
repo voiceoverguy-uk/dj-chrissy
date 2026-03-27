@@ -21,7 +21,7 @@ const packages = [
   {
     id: 'dj-only',
     label: 'DJ Only',
-    desc: 'DJ only, no equipment — bring your own PA',
+    desc: 'DJ only, no equipment - bring your own PA',
   },
   {
     id: 'dj-decks',

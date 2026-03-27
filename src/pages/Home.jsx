@@ -17,7 +17,7 @@ function AnimatedSection({ children, className = '', delay = 0 }) {
 }
 
 const galleryImages = [
-  { src: '/images/hero-confetti.jpg', alt: 'Home Before Dark — Confetti Celebration' },
+  { src: '/images/hero-confetti.jpg', alt: 'Home Before Dark - Confetti Celebration' },
   { src: '/images/crowd-phones.jpg', alt: 'Crowd at Home Before Dark' },
   { src: '/images/dj-arms-wide.jpg', alt: 'DJ Chrissy G at Home Before Dark' },
   { src: '/images/dj-mixing.jpg', alt: 'DJ Chrissy G on Pioneer decks' },
@@ -27,7 +27,7 @@ const galleryImages = [
 
 const services = [
   { icon: Music, label: 'Club Nights', desc: 'Dance, House, Trance, R&B, Motown & Old School' },
-  { icon: Users, label: 'Weddings', desc: 'From first dance to last track — unforgettable nights' },
+  { icon: Users, label: 'Weddings', desc: 'From first dance to last track - unforgettable nights' },
   { icon: Star, label: 'Private Events', desc: 'Birthdays, corporates, charity events & more' },
   { icon: Zap, label: 'Full Production', desc: 'Pioneer decks, speakers, lighting & Insta360' },
 ]
@@ -100,7 +100,7 @@ export default function Home() {
               DJ Chrissy G is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
             </p>
             <p className="text-white/60 leading-relaxed text-base mb-10">
-              Professional, tidy, and always fun — DJ Chrissy G delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
+              Professional, tidy, and always fun - DJ Chrissy G delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
             </p>
             <Link to="/about" className="btn-gold">
               Learn More
@@ -205,7 +205,7 @@ export default function Home() {
             </h2>
             <div className="gold-line mx-auto mb-8" />
             <p className="text-white/60 text-base leading-relaxed mb-10">
-              From weddings and birthday parties to club nights and corporate events — DJ Chrissy G brings the music, the atmosphere, and the full experience.
+              From weddings and birthday parties to club nights and corporate events - DJ Chrissy G brings the music, the atmosphere, and the full experience.
             </p>
             <Link to="/contact" className="btn-gold">
               Get In Touch
