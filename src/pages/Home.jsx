@@ -91,20 +91,22 @@ export default function Home() {
       <section id="about-teaser" className="py-24 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <AnimatedSection>
-            <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">About</p>
-            <h2 className="font-display text-5xl md:text-7xl text-white mb-6">
-              The Soundtrack<br />To Your Night
-            </h2>
-            <div className="gold-line mb-8" />
-            <p className="text-white/60 leading-relaxed text-base mb-6">
-              DJ Chrissy G is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
-            </p>
-            <p className="text-white/60 leading-relaxed text-base mb-10">
-              Professional, tidy, and always fun - DJ Chrissy G delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
-            </p>
-            <Link to="/about" className="btn-gold">
-              Learn More
-            </Link>
+            <div className="text-center">
+              <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">About</p>
+              <h2 className="font-display text-5xl md:text-7xl text-white mb-6">
+                The Soundtrack<br />To Your Night
+              </h2>
+              <div className="gold-line mx-auto mb-8" />
+              <p className="text-white/60 leading-relaxed text-base mb-6">
+                DJ Chrissy G is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
+              </p>
+              <p className="text-white/60 leading-relaxed text-base mb-10">
+                Professional, tidy, and always fun - DJ Chrissy G delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
+              </p>
+              <Link to="/about" className="btn-gold">
+                Learn More
+              </Link>
+            </div>
           </AnimatedSection>
 
           <AnimatedSection delay={150}>
