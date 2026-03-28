@@ -56,7 +56,10 @@ export default function Home() {
         <div className="hero-overlay absolute inset-0" />
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <p className="text-[#D4A017] text-xs md:text-sm tracking-[0.4em] uppercase font-semibold mb-6 text-pulse">
+          <p
+            className="text-[#D4A017] text-xs md:text-sm tracking-[0.4em] uppercase font-black mb-6 text-pulse"
+            style={{ textShadow: '0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}
+          >
             Wakefield's Feel-Good Party Specialist
           </p>
           <h1 className="font-display text-7xl md:text-[9rem] lg:text-[11rem] leading-none text-white mb-6">
