@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo-transparent.png" alt="DJCC Logo" className="h-20 w-auto" />
+          <img src="/images/logo-trimmed.png" alt="DJCC Logo" className="h-14 w-auto" />
         </Link>
 
         <div className="hidden md:flex items-center gap-10">
