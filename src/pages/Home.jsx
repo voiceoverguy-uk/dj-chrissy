@@ -66,7 +66,10 @@ export default function Home() {
             DJ Chrissy C
           </h1>
           <div className="gold-line mx-auto mb-8" />
-          <p className="text-white/70 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10">
+          <p
+            className="text-white text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10"
+            style={{ fontWeight: 700, textShadow: '0 1px 12px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1)' }}
+          >
             Dance, Club, House, Trance, R&B, Soul, Old School & Motown.<br />
             Every performance crafted with precision, passion, and pure party energy.
           </p>
