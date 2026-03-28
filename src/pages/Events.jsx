@@ -73,7 +73,7 @@ export default function Events() {
     <main>
       <PageHero
         title="Events"
-        subtitle="DJ Chrissy G"
+        subtitle="DJ Chrissy C"
         bgImage="/images/hero-confetti.jpg"
       />
 
@@ -146,7 +146,7 @@ export default function Events() {
               <h2 className="font-display text-5xl md:text-7xl text-white mb-4">Gallery</h2>
               <div className="gold-line mx-auto mb-6" />
               <p className="text-white/50 max-w-2xl mx-auto text-sm leading-relaxed">
-                Step into the world of DJ Chrissy G - capturing the energy, fun, and professionalism that define every event. From pulsing dancefloors to behind-the-scenes shots at the DJ booth.
+                Step into the world of DJ Chrissy C - capturing the energy, fun, and professionalism that define every event. From pulsing dancefloors to behind-the-scenes shots at the DJ booth.
               </p>
             </div>
           </AnimatedSection>
@@ -188,7 +188,7 @@ export default function Events() {
               Get in touch and let's make your next event one to remember.
             </p>
             <Link to="/contact" className="btn-gold">
-              Book DJ Chrissy G
+              Book DJ Chrissy C
             </Link>
           </div>
         </AnimatedSection>

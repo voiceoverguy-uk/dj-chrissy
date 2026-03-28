@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div className="border-t border-[#1a1a1a] pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-white/30 text-xs tracking-wide">
-            &copy; {new Date().getFullYear()} DJ Chrissy G. All rights reserved.
+            &copy; {new Date().getFullYear()} DJ Chrissy C. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">
             djshakeywakey.co.uk

@@ -19,8 +19,8 @@ function AnimatedSection({ children, className = '', delay = 0 }) {
 const galleryImages = [
   { src: '/images/hero-confetti.jpg', alt: 'Home Before Dark - Confetti Celebration' },
   { src: '/images/crowd-phones.jpg', alt: 'Crowd at Home Before Dark' },
-  { src: '/images/dj-arms-wide.jpg', alt: 'DJ Chrissy G at Home Before Dark' },
-  { src: '/images/dj-mixing.jpg', alt: 'DJ Chrissy G on Pioneer decks' },
+  { src: '/images/dj-arms-wide.jpg', alt: 'DJ Chrissy C at Home Before Dark' },
+  { src: '/images/dj-mixing.jpg', alt: 'DJ Chrissy C on Pioneer decks' },
   { src: '/images/about-me.jpg', alt: 'Home Before Dark club night' },
   { src: '/images/dance-floor.jpg', alt: 'Wedding dance floor setup' },
 ]
@@ -60,7 +60,7 @@ export default function Home() {
             Wakefield's Feel-Good Party Specialist
           </p>
           <h1 className="font-display text-7xl md:text-[9rem] lg:text-[11rem] leading-none text-white mb-6">
-            DJ Chrissy G
+            DJ Chrissy C
           </h1>
           <div className="gold-line mx-auto mb-8" />
           <p className="text-white/70 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10">
@@ -69,7 +69,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-gold">
-              Book DJ Chrissy G
+              Book DJ Chrissy C
             </Link>
             <Link to="/events" className="btn-outline-gold">
               View Events
@@ -98,10 +98,10 @@ export default function Home() {
               </h2>
               <div className="gold-line mx-auto mb-8" />
               <p className="text-white/60 leading-relaxed text-base mb-6">
-                DJ Chrissy G is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
+                DJ Chrissy C is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
               </p>
               <p className="text-white/60 leading-relaxed text-base mb-10">
-                Professional, tidy, and always fun - DJ Chrissy G delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
+                Professional, tidy, and always fun - DJ Chrissy C delivers the ultimate soundtrack to your night, where great music meets good vibes, every single time.
               </p>
               <Link to="/about" className="btn-gold">
                 Learn More
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="relative">
               <img
                 src="/images/dj-arms-wide.jpg"
-                alt="DJ Chrissy G at Home Before Dark"
+                alt="DJ Chrissy C at Home Before Dark"
                 className="w-full object-cover"
                 style={{ height: '560px', objectPosition: 'top' }}
               />
@@ -207,7 +207,7 @@ export default function Home() {
             </h2>
             <div className="gold-line mx-auto mb-8" />
             <p className="text-white/60 text-base leading-relaxed mb-10">
-              From weddings and birthday parties to club nights and corporate events - DJ Chrissy G brings the music, the atmosphere, and the full experience.
+              From weddings and birthday parties to club nights and corporate events - DJ Chrissy C brings the music, the atmosphere, and the full experience.
             </p>
             <Link to="/contact" className="btn-gold">
               Get In Touch

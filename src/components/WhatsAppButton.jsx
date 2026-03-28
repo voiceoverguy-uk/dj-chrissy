@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const WHATSAPP_NUMBER = '447830291463'
-const WHATSAPP_MESSAGE = encodeURIComponent("Hi! I'd like to enquire about booking DJ Chrissy G for my event.")
+const WHATSAPP_MESSAGE = encodeURIComponent("Hi! I'd like to enquire about booking DJ Chrissy C for my event.")
 
 export default function WhatsAppButton() {
   const [open, setOpen] = useState(false)

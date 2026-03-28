@@ -61,7 +61,7 @@ async function generate() {
   ctx.font = '400 155px BebasNeue'
   ctx.fillStyle = 'white'
   ctx.textAlign = 'center'
-  ctx.fillText('DJ CHRISSY G', W / 2, 380)
+  ctx.fillText('DJ CHRISSY C', W / 2, 380)
 
   // Gold divider line
   ctx.fillStyle = goldGrad(W / 2 - 45, W / 2 + 45)

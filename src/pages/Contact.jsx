@@ -60,7 +60,7 @@ export default function Contact() {
     <main>
       <PageHero
         title="Contact"
-        subtitle="Book DJ Chrissy G"
+        subtitle="Book DJ Chrissy C"
         bgImage="/images/dj-mixing.jpg"
       />
 
@@ -78,7 +78,7 @@ export default function Contact() {
                 <CheckCircle size={48} className="text-[#D4A017] mx-auto mb-4" />
                 <h3 className="font-display text-3xl text-white mb-3">Message Sent!</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Thanks for getting in touch. DJ Chrissy G will be in contact with you soon to discuss your event.
+                  Thanks for getting in touch. DJ Chrissy C will be in contact with you soon to discuss your event.
                 </p>
               </div>
             ) : (
@@ -292,7 +292,7 @@ export default function Contact() {
               <div className="relative overflow-hidden" style={{ height: '240px' }}>
                 <img
                   src="/images/dj-arms-wide.jpg"
-                  alt="DJ Chrissy G"
+                  alt="DJ Chrissy C"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="image-overlay absolute inset-0" />

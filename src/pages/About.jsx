@@ -43,7 +43,7 @@ export default function About() {
     <main>
       <PageHero
         title="About Me"
-        subtitle="DJ Chrissy G"
+        subtitle="DJ Chrissy C"
         bgImage="/images/dj-mixing.jpg"
       />
 
@@ -52,17 +52,17 @@ export default function About() {
           <AnimatedSection>
             <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">The DJ</p>
             <h2 className="font-display text-5xl md:text-6xl text-white mb-6">
-              DJ Chrissy G
+              DJ Chrissy C
             </h2>
             <div className="gold-line mb-8" />
             <p className="text-white/70 leading-relaxed text-base mb-6">
-              DJ Chrissy G is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
+              DJ Chrissy C is a versatile and dynamic DJ based in Wakefield, known for delivering high-energy sets with a polished, feel-good vibe. With a music catalogue spanning the 60s, 70s, 80s, 00s, 10s and today, Chrissy brings together classic hits and modern favourites to create unforgettable party atmospheres for all ages.
             </p>
             <p className="text-white/70 leading-relaxed text-base mb-6">
               Specialising in <span className="text-[#D4A017] font-semibold">Dance, Club, Trance, House, R&B, Soul, Old School and Motown</span>, Chrissy blends timeless grooves with floor-filling anthems, keeping crowds moving from the first track to the last.
             </p>
             <p className="text-white/70 leading-relaxed text-base mb-10">
-              Professional, energetic and always fun - DJ Chrissy G brings the music, the atmosphere and the full experience, turning every event into a night to remember.
+              Professional, energetic and always fun - DJ Chrissy C brings the music, the atmosphere and the full experience, turning every event into a night to remember.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-10">
@@ -85,7 +85,7 @@ export default function About() {
             <div className="relative">
               <img
                 src="/images/dj-arms-wide.jpg"
-                alt="DJ Chrissy G at Home Before Dark"
+                alt="DJ Chrissy C at Home Before Dark"
                 className="w-full object-cover object-top"
                 style={{ height: '600px' }}
               />
