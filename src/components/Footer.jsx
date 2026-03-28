@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <img src="/images/logo.png" alt="DJCC" className="h-12 w-auto mb-4" />
+            <img src="/images/logo-trimmed.png" alt="DJCC" className="h-14 w-auto mb-4" />
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Wakefield's Feel-Good Party Specialist. Bringing the music, the atmosphere, and the full experience to every event.
             </p>
