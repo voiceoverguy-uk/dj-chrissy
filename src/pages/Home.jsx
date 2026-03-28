@@ -57,8 +57,8 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
           <p
-            className="text-[#D4A017] text-xs md:text-sm tracking-[0.4em] uppercase font-black mb-6 text-pulse"
-            style={{ textShadow: '0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)' }}
+            className="text-[#D4A017] text-sm md:text-base tracking-[0.35em] uppercase mb-6"
+            style={{ fontWeight: 900, textShadow: '0 1px 12px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1)' }}
           >
             Wakefield's Feel-Good Party Specialist
           </p>
