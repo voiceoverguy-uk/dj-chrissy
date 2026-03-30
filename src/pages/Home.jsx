@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 import { ChevronDown, Music, Users, Star, Zap } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import SEO from '../components/SEO'
+import FaqSection from '../components/FaqSection'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useScrollAnimation()
@@ -203,6 +204,8 @@ export default function Home() {
           </AnimatedSection>
         </div>
       </section>
+
+      <FaqSection />
 
       <section className="relative py-28 px-6 overflow-hidden">
         <div
