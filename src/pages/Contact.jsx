@@ -55,8 +55,13 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setLoading(true)
     setError('')
+    const wordCount = form.message.trim().split(/\s+/).filter(Boolean).length
+    if (wordCount < 5) {
+      setError('Please write at least 5 words in your message.')
+      return
+    }
+    setLoading(true)
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -135,7 +140,7 @@ export default function Contact() {
 
                 <div>
                   <label className="block text-white/50 text-xs tracking-widest uppercase mb-2" htmlFor="venue">
-                    Venue Location
+                    Venue Location (optional)
                   </label>
                   <input
                     id="venue"
@@ -151,13 +156,12 @@ export default function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-white/50 text-xs tracking-widest uppercase mb-2" htmlFor="eventDate">
-                      Date of Event *
+                      Date of Event
                     </label>
                     <input
                       id="eventDate"
                       name="eventDate"
                       type="date"
-                      required
                       value={form.eventDate}
                       onChange={handleChange}
                       className="w-full bg-[#111] border border-[#222] text-white text-sm px-4 py-3 focus:outline-none focus:border-[#D4A017] transition-colors"
