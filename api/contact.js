@@ -44,17 +44,23 @@ ${message}
   `.trim()
 
   try {
-    await resend.emails.send({
-      from: process.env.CONTACT_FROM,
-      to: process.env.CONTACT_TO,
+    const { data, error } = await resend.emails.send({
+      from: process.env.CONTACT_FROM_EMAIL,
+      to: process.env.CONTACT_TO_EMAIL,
       replyTo: email,
       subject: `Booking Enquiry — ${name} (${eventType}, ${eventDate})`,
       text,
     })
 
+    if (error) {
+      console.error('Resend API error:', JSON.stringify(error))
+      return res.status(500).json({ error: error.message || 'Failed to send message.' })
+    }
+
+    console.log('Email sent, Resend id:', data?.id)
     return res.status(200).json({ success: true })
   } catch (err) {
-    console.error('Resend error:', err)
+    console.error('Resend exception:', err)
     return res.status(500).json({ error: 'Failed to send message. Please try again.' })
   }
 }
