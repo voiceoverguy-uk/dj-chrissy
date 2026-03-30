@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { Mail, CheckCircle } from 'lucide-react'
 import { InstagramIcon, YoutubeIcon, WhatsAppIcon } from '../components/SocialIcons'
+import SEO from '../components/SEO'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useScrollAnimation()
@@ -80,6 +81,10 @@ export default function Contact() {
 
   return (
     <main>
+      <SEO
+        title="Book a DJ in Wakefield | DJ Chrissy C | Get in Touch"
+        description="Hire DJ Chrissy C — Wakefield DJ available for weddings, birthday parties, corporate events and club nights. Get in touch to check availability and book your date."
+      />
       <PageHero
         title="Contact"
         subtitle="Book DJ Chrissy C"

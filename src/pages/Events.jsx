@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { CalendarDays, Clock, MapPin } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useScrollAnimation()
@@ -71,6 +72,10 @@ const allImages = [
 export default function Events() {
   return (
     <main>
+      <SEO
+        title="Events & Club Nights | DJ Chrissy C | Wakefield DJ"
+        description="Upcoming events and club nights from DJ Chrissy C, Wakey DJ for hire. Book DJ Chrissy C for your next party, wedding or corporate event in Wakefield and West Yorkshire."
+      />
       <PageHero
         title="Events"
         subtitle="DJ Chrissy C"

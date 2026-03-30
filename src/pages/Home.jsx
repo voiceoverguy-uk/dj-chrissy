@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { ChevronDown, Music, Users, Star, Zap } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import SEO from '../components/SEO'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useScrollAnimation()
@@ -47,6 +48,10 @@ export default function Home() {
 
   return (
     <main>
+      <SEO
+        title="DJ Chrissy C | DJ for Hire in Wakefield | Weddings, Parties & Club Nights"
+        description="DJ Chrissy C — Wakefield's Feel-Good Party Specialist. Wakey DJ for hire for weddings, birthday parties, corporate events and club nights across West Yorkshire. Book now."
+      />
       <section className="relative flex items-center justify-center overflow-hidden" style={{ height: '100vh', minHeight: '700px' }}>
         <div
           ref={heroRef}
