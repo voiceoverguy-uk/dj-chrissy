@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   const { name, email, venue, eventDate, eventType, message, djPackage } = req.body || {}
 
-  if (!name || !email || !eventDate || !eventType || !message) {
+  if (!name || !email || !eventType || !message) {
     return res.status(400).json({ error: 'Missing required fields' })
   }
 
@@ -32,7 +32,7 @@ Reply to:    ${email}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 EVENT DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-Event Date:  ${eventDate}
+Event Date:  ${eventDate || 'Not specified'}
 Event Type:  ${eventType}
 Venue:       ${venue || 'Not specified'}
 Package:     ${packageLabels[djPackage] || djPackage}
@@ -48,7 +48,7 @@ ${message}
       from: process.env.CONTACT_FROM_EMAIL,
       to: process.env.CONTACT_TO_EMAIL,
       replyTo: email,
-      subject: `Booking Enquiry — ${name} (${eventType}, ${eventDate})`,
+      subject: `Booking Enquiry — ${name} (${eventType}${eventDate ? `, ${eventDate}` : ''})`,
       text,
     })
 
