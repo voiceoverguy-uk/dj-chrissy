@@ -46,14 +46,31 @@ export default function Contact() {
     djPackage: 'dj-decks',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Something went wrong')
+      setSubmitted(true)
+    } catch (err) {
+      setError(err.message || 'Failed to send message. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -215,8 +232,18 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <button type="submit" className="btn-gold w-full text-center">
-                  Send Message
+                {error && (
+                  <p className="text-red-400 text-sm border border-red-400/30 bg-red-400/5 px-4 py-3">
+                    {error}
+                  </p>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-gold w-full text-center disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             )}
