@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /wp-*
+Disallow: /comments/
+Disallow: /feed/
+Disallow: /hello-world/
+Disallow: /projects/
 
 Sitemap: https://www.djshakeywakey.co.uk/sitemap.xml

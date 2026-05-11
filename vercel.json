@@ -7,7 +7,12 @@
       "has": [{ "type": "host", "value": "djshakeywakey.co.uk" }],
       "destination": "https://www.djshakeywakey.co.uk/$1",
       "permanent": true
-    }
+    },
+    { "source": "/wp-:path*", "destination": "/", "permanent": true },
+    { "source": "/comments/:path*", "destination": "/", "permanent": true },
+    { "source": "/feed/:path*", "destination": "/", "permanent": true },
+    { "source": "/hello-world/", "destination": "/", "permanent": true },
+    { "source": "/projects/", "destination": "/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
