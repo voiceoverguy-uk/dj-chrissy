@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { photos } from './eventsSlideshowData'
 import { nextPhotoIndex, keyboardDirection, swipeDirection } from './eventsSlideshowNavigation'
@@ -6,7 +6,18 @@ import { nextPhotoIndex, keyboardDirection, swipeDirection } from './eventsSlide
 export default function EventsSlideshow() {
   const [index, setIndex] = useState(0)
   const [touchStart, setTouchStart] = useState(null)
+  const thumbnailsRef = useRef(null)
   const photo = photos[index]
+
+  useEffect(() => {
+    const strip = thumbnailsRef.current
+    const active = strip?.children[index]
+    if (!active) return
+    strip.scrollTo({
+      left: active.offsetLeft - strip.offsetLeft - (strip.clientWidth - active.clientWidth) / 2,
+      behavior: 'smooth',
+    })
+  }, [index])
 
   const goTo = (direction) => {
     setIndex((current) => nextPhotoIndex(current, direction, photos.length))
@@ -95,7 +106,30 @@ export default function EventsSlideshow() {
               <ArrowRight size={20} aria-hidden="true" />
             </button>
           </div>
-          <p className="text-center text-white/40 text-xs mt-4">Swipe on mobile or use the arrows to browse</p>
+          <div className="mt-6" role="group" aria-label="Choose a wedding photo">
+            <div ref={thumbnailsRef} className="relative flex gap-2 sm:gap-3 overflow-x-auto pb-3 snap-x snap-mandatory">
+              {photos.map((item, photoIndex) => (
+                <button
+                  key={item.src}
+                  type="button"
+                  onClick={() => setIndex(photoIndex)}
+                  aria-label={`Show photo ${photoIndex + 1} of ${photos.length}: ${item.alt}`}
+                  aria-pressed={photoIndex === index}
+                  className={`relative shrink-0 w-16 h-16 sm:w-20 sm:h-20 snap-center overflow-hidden border-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D4A017] ${
+                    photoIndex === index ? 'border-[#D4A017]' : 'border-[#333] hover:border-[#D4A017]/70'
+                  }`}
+                >
+                  <img src={item.src} alt="" loading="lazy" className="w-full h-full object-cover" />
+                  <span className={`absolute bottom-0 right-0 px-1.5 py-0.5 text-[10px] font-bold ${
+                    photoIndex === index ? 'bg-[#D4A017] text-[#080808]' : 'bg-[#080808]/80 text-white'
+                  }`}>
+                    {photoIndex + 1}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+          <p className="text-center text-white/40 text-xs mt-4">Choose a photo, swipe on mobile or use the arrows to browse</p>
         </div>
       </div>
     </section>
