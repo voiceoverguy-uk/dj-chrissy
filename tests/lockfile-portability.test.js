@@ -9,7 +9,10 @@ test('lockfile does not point to Replit-only package downloads', async () => {
     for (const [name, dependency] of Object.entries(lockfile[section] ?? {})) {
       if (!dependency.resolved) continue
       const hostname = new URL(dependency.resolved).hostname
-      assert.notEqual(hostname, 'package-firewall.replit.internal', `${section}/${name} cannot be installed outside Replit`)
+      assert.ok(
+        hostname !== 'replit.internal' && !hostname.endsWith('.replit.internal'),
+        `${section}/${name} resolves to ${dependency.resolved}, which cannot be installed outside Replit. Replace the resolved URL with the public registry.npmjs.org tarball URL without changing the version or integrity checksum.`,
+      )
     }
   }
 })
