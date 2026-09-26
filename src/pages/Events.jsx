@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { CalendarDays, Clock, MapPin } from 'lucide-react'
 import SEO from '../components/SEO'
+import EventsSlideshow from '../components/EventsSlideshow'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
   const ref = useScrollAnimation()
@@ -175,6 +176,8 @@ export default function Events() {
           </div>
         </div>
       </section>
+
+      <EventsSlideshow />
 
       <section className="relative py-28 px-6 overflow-hidden">
         <div
