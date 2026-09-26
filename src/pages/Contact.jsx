@@ -2,7 +2,6 @@ import { useState } from 'react'
 import PageHero from '../components/PageHero'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { Mail, CheckCircle } from 'lucide-react'
-import { InstagramIcon, YoutubeIcon, WhatsAppIcon } from '../components/SocialIcons'
 import SEO from '../components/SEO'
 
 function AnimatedSection({ children, className = '', delay = 0 }) {
@@ -268,39 +267,6 @@ export default function Contact() {
                       <Mail size={16} />
                     </div>
                     <span className="text-sm">bookings@djshakeywakey.co.uk</span>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">Follow Us</p>
-                <div className="flex gap-3">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 border border-[#222] hover:border-[#D4A017] flex items-center justify-center text-white/50 hover:text-[#D4A017] transition-all"
-                    aria-label="Instagram"
-                  >
-                    <InstagramIcon size={18} />
-                  </a>
-                  <a
-                    href="https://wa.me/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 border border-[#222] hover:border-[#D4A017] flex items-center justify-center text-white/50 hover:text-[#D4A017] transition-all"
-                    aria-label="WhatsApp"
-                  >
-                    <WhatsAppIcon size={18} />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 border border-[#222] hover:border-[#D4A017] flex items-center justify-center text-white/50 hover:text-[#D4A017] transition-all"
-                    aria-label="YouTube"
-                  >
-                    <YoutubeIcon size={18} />
                   </a>
                 </div>
               </div>

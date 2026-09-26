@@ -68,4 +68,5 @@ The email includes all form fields: name, email (set as reply-to), venue, event 
 ```
 npm run dev    # Starts Vite (port 5000) + API server (port 3001) together
 npm run build  # Production build, including per-route HTML metadata
+npm test       # Checks wedding slideshow navigation and its public photo assets
 ```

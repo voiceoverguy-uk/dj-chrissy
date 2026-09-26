@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { Mail } from 'lucide-react'
-import { InstagramIcon, YoutubeIcon, WhatsAppIcon } from './SocialIcons'
 
 export default function Footer() {
   return (
@@ -44,35 +43,6 @@ export default function Footer() {
               <Mail size={16} />
               bookings@djshakeywakey.co.uk
             </a>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-white/50 hover:text-[#D4A017] hover:border-[#D4A017] transition-all"
-                aria-label="Instagram"
-              >
-                <InstagramIcon size={18} />
-              </a>
-              <a
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-white/50 hover:text-[#D4A017] hover:border-[#D4A017] transition-all"
-                aria-label="WhatsApp"
-              >
-                <WhatsAppIcon size={18} />
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-white/50 hover:text-[#D4A017] hover:border-[#D4A017] transition-all"
-                aria-label="YouTube"
-              >
-                <YoutubeIcon size={18} />
-              </a>
-            </div>
           </div>
         </div>
 

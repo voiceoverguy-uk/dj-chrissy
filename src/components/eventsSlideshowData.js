@@ -1,0 +1,16 @@
+export const photos = [
+  { src: '/images/recent-events/dj-chrissy-c-2.webp', alt: 'Guests dancing with glow sticks in front of the DJ booth' },
+  { src: '/images/recent-events/dj-chrissy-c-9.webp', alt: 'DJ decks overlooking guests seated at a celebration venue' },
+  { src: '/images/recent-events/dj-chrissy-c-3.webp', alt: 'Guests dancing beneath colourful lights at an indoor event' },
+  { src: '/images/recent-events/dj-chrissy-c-5.webp', alt: 'DJ view of guests and colourful lights in a function room' },
+  { src: '/images/recent-events/dj-chrissy-c-1.webp', alt: 'DJ sound system and lighting set up beside celebration balloons' },
+  { src: '/images/recent-events/dj-chrissy-c-4.webp', alt: 'DJ decks illuminated by blue lights' },
+  { src: '/images/recent-events/dj-chrissy-c-7.webp', alt: 'DJ Chrissy C performing under purple lights' },
+  { src: '/images/recent-events/dj-chrissy-c-8.webp', alt: 'Crowd dancing outdoors behind a Pioneer DJ setup' },
+  { src: '/images/recent-events/dj-chrissy-c-6.webp', alt: 'Crowd dancing with colourful glow sticks' },
+  { src: '/images/recent-events/dj-chrissy-c-10.webp', alt: 'Decorated function room with DJ setup and pink balloon arch' },
+  { src: '/images/recent-events/dj-chrissy-c-11.webp', alt: 'DJ Chrissy C performing in front of a colourful illuminated backdrop' },
+  { src: '/images/recent-events/dj-chrissy-c-12.webp', alt: 'Guests dancing outdoors under string lights, viewed from the DJ decks' },
+  { src: '/images/recent-events/dj-chrissy-c-13.webp', alt: 'Decorated function room with gold balloons and DJ equipment' },
+  { src: '/images/recent-events/dj-chrissy-c-14.webp', alt: 'Decorated celebration tables and DJ setup in a function room' },
+]
