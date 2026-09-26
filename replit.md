@@ -61,10 +61,11 @@ The email includes all form fields: name, email (set as reply-to), venue, event 
 - `resolve.dedupe` ensures React is not duplicated across pre-bundled chunks
 - Custom CSS animations defined in `index.css` instead of Tailwind `animate-*` utilities
 - `concurrently` runs Vite + Express API server together in dev mode
+- Search metadata for the four public routes is shared between the React UI and the build-time HTML generator; Vercel rewrites those routes to their generated HTML files rather than using a catch-all SPA rewrite. Unknown production URLs should remain 404.
 
 ## Running
 
 ```
 npm run dev    # Starts Vite (port 5000) + API server (port 3001) together
-npm run build  # Production build
+npm run build  # Production build, including per-route HTML metadata
 ```

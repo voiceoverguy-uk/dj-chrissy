@@ -81,12 +81,9 @@ export default function Contact() {
 
   return (
     <main>
-      <SEO
-        title="Book a DJ in Wakefield | DJ Chrissy C | Get in Touch"
-        description="Hire DJ Chrissy C — Wakefield DJ available for weddings, birthday parties, corporate events and club nights. Get in touch to check availability and book your date."
-      />
+      <SEO />
       <PageHero
-        title="Contact"
+        title="Book a DJ in Wakefield"
         subtitle="Book DJ Chrissy C"
         bgImage="/images/dj-mixing.jpg"
       />

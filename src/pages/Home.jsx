@@ -49,10 +49,7 @@ export default function Home() {
 
   return (
     <main>
-      <SEO
-        title="DJ Chrissy C | DJ for Hire in Wakefield | Weddings, Parties & Club Nights"
-        description="DJ Chrissy C — Wakefield's Feel-Good Party Specialist. Wakey DJ for hire for weddings, birthday parties, corporate events and club nights across West Yorkshire. Book now."
-      />
+      <SEO />
       <section className="relative flex items-center justify-center overflow-hidden" style={{ height: '100vh', minHeight: '700px' }}>
         <div
           ref={heroRef}
@@ -76,8 +73,8 @@ export default function Home() {
             className="text-white text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10"
             style={{ fontWeight: 700, textShadow: '0 1px 12px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1)' }}
           >
-            Dance, Club, House, Trance, R&B, Soul, Old School & Motown.<br />
-            Every performance crafted with precision, passion, and pure party energy.
+            DJ for hire in Wakefield for weddings, parties and club nights across West Yorkshire.<br />
+            Dance, club classics, R&B, soul and Motown, tailored to your night.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-gold">
@@ -160,6 +157,49 @@ export default function Home() {
                 </div>
               </AnimatedSection>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6" aria-labelledby="wakefield-dj-services">
+        <div className="max-w-7xl mx-auto">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">Your Celebration</p>
+              <h2 id="wakefield-dj-services" className="font-display text-5xl md:text-7xl text-white mb-4">
+                Wedding & Party DJ in Wakefield
+              </h2>
+              <div className="gold-line mx-auto mb-6" />
+              <p className="text-white/60 max-w-2xl mx-auto leading-relaxed">
+                Planning a celebration in Wakefield or elsewhere in West Yorkshire? Tell Chrissy about your venue, guests and the music you love so the set feels right for your event.
+              </p>
+            </div>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-2 gap-6">
+            <AnimatedSection>
+              <div className="h-full bg-[#111] border border-[#1e1e1e] p-8 md:p-10">
+                <h3 className="font-display text-3xl md:text-4xl text-white mb-5">Weddings</h3>
+                <p className="text-white/60 leading-relaxed mb-5">
+                  From your first dance to the last track, the music should reflect you. Share the songs you want to hear, the moments that matter and the mix of guests on your dancefloor.
+                </p>
+                <p className="text-white/60 leading-relaxed mb-8">
+                  See real celebrations and DJ setups in the <Link to="/events" className="text-[#D4A017] hover:underline">events gallery</Link>, then get in touch to discuss your wedding date and venue.
+                </p>
+                <Link to="/contact" className="btn-outline-gold">Enquire About Your Wedding</Link>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={100}>
+              <div className="h-full bg-[#111] border border-[#1e1e1e] p-8 md:p-10">
+                <h3 className="font-display text-3xl md:text-4xl text-white mb-5">Parties & Private Events</h3>
+                <p className="text-white/60 leading-relaxed mb-5">
+                  Birthdays, corporate gatherings and private celebrations all need their own soundtrack. Chrissy plays across decades and genres, blending favourites with the energy of the room.
+                </p>
+                <p className="text-white/60 leading-relaxed mb-8">
+                  Need sound and lighting as well as a DJ? Choose from DJ-only, decks and speakers, or a full package when you enquire. Include your guest numbers and venue so you can discuss the right setup.
+                </p>
+                <Link to="/contact" className="btn-outline-gold">Ask About Your Party</Link>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>

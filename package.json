@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"vite --port 5000 --host 0.0.0.0\" \"node server.js\"",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-route-html.mjs",
     "preview": "vite preview"
   },
   "keywords": [],

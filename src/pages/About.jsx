@@ -42,12 +42,9 @@ const genres = [
 export default function About() {
   return (
     <main>
-      <SEO
-        title="About DJ Chrissy C | Wakefield DJ for Hire | Feel-Good Party Specialist"
-        description="Meet DJ Chrissy C — Wakefield's premier DJ for hire. Playing Dance, Club, House, R&B, Soul & Motown at weddings, parties and events across West Yorkshire."
-      />
+      <SEO />
       <PageHero
-        title="About Me"
+        title="About DJ Chrissy C"
         subtitle="DJ Chrissy C"
         bgImage="/images/dj-mixing.jpg"
       />

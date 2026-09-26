@@ -8,13 +8,14 @@
       "destination": "https://www.djshakeywakey.co.uk/$1",
       "permanent": true
     },
-    { "source": "/wp-:path*", "destination": "/", "permanent": true },
-    { "source": "/comments/:path*", "destination": "/", "permanent": true },
-    { "source": "/feed/:path*", "destination": "/", "permanent": true },
-    { "source": "/hello-world/", "destination": "/", "permanent": true },
-    { "source": "/projects/", "destination": "/", "permanent": true }
+    { "source": "/projects/", "destination": "/events", "permanent": true },
+    { "source": "/about/", "destination": "/about", "permanent": true },
+    { "source": "/events/", "destination": "/events", "permanent": true },
+    { "source": "/contact/", "destination": "/contact", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/events", "destination": "/events.html" },
+    { "source": "/contact", "destination": "/contact.html" }
   ]
 }

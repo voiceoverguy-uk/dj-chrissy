@@ -73,12 +73,9 @@ const allImages = [
 export default function Events() {
   return (
     <main>
-      <SEO
-        title="Events & Club Nights | DJ Chrissy C | Wakefield DJ"
-        description="Upcoming events and club nights from DJ Chrissy C, Wakey DJ for hire. Book DJ Chrissy C for your next party, wedding or corporate event in Wakefield and West Yorkshire."
-      />
+      <SEO />
       <PageHero
-        title="Events"
+        title="Events & Celebrations"
         subtitle="DJ Chrissy C"
         bgImage="/images/hero-confetti.jpg"
       />
