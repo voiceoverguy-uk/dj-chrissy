@@ -1,3 +1,4 @@
 - [Wedding photo classification](wedding-photo-classification.md) — the supplied DJ photo set was confirmed as wedding photography despite mixed-event visual cues.
 - [Clean merge dependency checks](clean-merge-dependency-checks.md) — test clean installs and check lockfile URLs before building outside Replit.
 - [SPA preview 404 checks](spa-preview-404-checks.md) — test missing routes with plain HTTP as well as browser headers; Vite's fallback can mask them.
+- [Git workflow push rejection](git-workflow-push-rejection.md) — generic push errors can hide workflow permission issues; inspect outgoing history and remote divergence first.
