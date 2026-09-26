@@ -288,13 +288,12 @@ export default function Contact() {
                 </ul>
               </div>
 
-              <div className="relative overflow-hidden" style={{ height: '240px' }}>
+              <div className="aspect-[4/5] overflow-hidden bg-[#111]">
                 <img
                   src="/images/dj-arms-wide.jpg"
-                  alt="DJ Chrissy C"
-                  className="w-full h-full object-cover object-top"
+                  alt="DJ Chrissy C with arms outstretched behind the DJ decks"
+                  className="w-full h-full object-contain"
                 />
-                <div className="image-overlay absolute inset-0" />
               </div>
             </div>
           </AnimatedSection>
