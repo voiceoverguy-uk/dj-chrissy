@@ -9,3 +9,22 @@ The local build produces distinct HTML for `/`, `/about`, `/events` and `/contac
 5. As the owner, check whether a Google Business Profile exists and is verified. Keep its name, contact details, service area, service categories, photos and website link accurate; invite genuine customer reviews without incentives. The website cannot edit or verify the profile for you.
 
 Google can render JavaScript, but serving correct initial metadata avoids conflicting canonical signals. FAQ answers may still help visitors; do not expect FAQ rich results from their markup.
+
+## Owner-authorized Search Console baseline
+
+The four URLs in `public/sitemap.xml` are the measurement set. Website canonicals and sitemap entries are **intended** URLs, not evidence that Google has indexed or selected them. Do not infer clicks or stable positions from public search results.
+
+1. In Search Console, select the verified `https://www.djshakeywakey.co.uk/` URL-prefix property (or a verified `djshakeywakey.co.uk` domain property that includes the www host). Record the property shown in the selector and the date checked. If access is unavailable, request owner exports and URL Inspection screenshots; never request credentials. Do not use a non-www-only URL-prefix property as a substitute.
+2. For each exact URL below, run **URL Inspection** on the *published* site. Record the inspection date, whether the URL is on Google, the Page indexing verdict/reason, Google-selected canonical, user-declared canonical, last crawl date, and whether the inspected page is the live or indexed version. A live test only establishes current fetchability, not indexing. If a URL is not indexed or Google selected another canonical, note the reason and investigate before requesting indexing.
+3. In **Performance → Search results**, select **Web**, all countries and devices, and the most recent **complete** 28-day period (exclude the current day and any incomplete recent data). Export both **Pages** and **Queries** tables as CSV, preserving the property, filters and dates in the filename or accompanying note. To see page/query combinations, apply an exact Page filter for each of the four URLs and export its Queries table separately. For the whole-property local-demand view, filter Queries with `(?i)(wakefield|wedding dj|party dj)` if regex is available, and export the resulting Queries table; retain the unfiltered export as a check. Search Console may suppress low-volume/anonymized queries, so query rows need not add up to totals.
+4. For each page and query group, record impressions, clicks, CTR and average position. The query groups are **Wakefield DJ hire** (for example “DJ hire Wakefield” and close variants), **wedding DJ** (including Wakefield variants), and **party DJ** (including Wakefield variants). Keep the exact matched query strings and an explicit group rule with the export so later runs use the same classification. Do not add per-query average positions together or average them without weighting by impressions. Position is an average across impressions and is not a guaranteed rank.
+5. Repeat every 28 days with the same property, Web search type, country/device scope, page URLs, group rules and export procedure. Compare two non-overlapping, equal-length **complete** 28-day windows; label both date ranges and report absolute and percentage changes in clicks and impressions, plus CTR and impression-weighted average position. Mark a percentage change from zero as “not applicable.” Keep an eye on seasonality and small counts; do not promise a ranking or attribute changes solely to this SEO update.
+
+| Page | Exact URL | Indexed? / reason | Google-selected canonical | Impressions | Clicks | CTR | Avg. position |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| Home | `https://www.djshakeywakey.co.uk/` | Pending owner inspection | Pending | — | — | — | — |
+| About | `https://www.djshakeywakey.co.uk/about` | Pending owner inspection | Pending | — | — | — | — |
+| Events | `https://www.djshakeywakey.co.uk/events` | Pending owner inspection | Pending | — | — | — | — |
+| Contact | `https://www.djshakeywakey.co.uk/contact` | Pending owner inspection | Pending | — | — | — | — |
+
+**Baseline status:** pending owner-authorized Search Console access or export. No Search Console measurement, indexing verdict or Google-selected canonical has been verified here. Record the actual property and export date range with the completed table; do not replace “Pending” with guesses from site metadata.
