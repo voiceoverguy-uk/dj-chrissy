@@ -1,0 +1,1 @@
+- [Wedding photo classification](wedding-photo-classification.md) — the supplied DJ photo set was confirmed as wedding photography despite mixed-event visual cues.

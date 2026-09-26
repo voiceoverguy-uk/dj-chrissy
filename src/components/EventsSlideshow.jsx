@@ -8,9 +8,14 @@ const photos = [
   { src: '/images/recent-events/dj-chrissy-c-5.webp', alt: 'DJ view of guests and colourful lights in a function room' },
   { src: '/images/recent-events/dj-chrissy-c-1.webp', alt: 'DJ sound system and lighting set up beside celebration balloons' },
   { src: '/images/recent-events/dj-chrissy-c-4.webp', alt: 'DJ decks illuminated by blue lights' },
-  { src: '/images/recent-events/dj-chrissy-c-7.webp', alt: 'DJ Chrissy C performing under purple lights at a club event' },
+  { src: '/images/recent-events/dj-chrissy-c-7.webp', alt: 'DJ Chrissy C performing under purple lights' },
   { src: '/images/recent-events/dj-chrissy-c-8.webp', alt: 'Crowd dancing outdoors behind a Pioneer DJ setup' },
-  { src: '/images/recent-events/dj-chrissy-c-6.webp', alt: 'Crowd enjoying a club night with colourful glow sticks' },
+  { src: '/images/recent-events/dj-chrissy-c-6.webp', alt: 'Crowd dancing with colourful glow sticks' },
+  { src: '/images/recent-events/dj-chrissy-c-10.webp', alt: 'Decorated function room with DJ setup and pink balloon arch' },
+  { src: '/images/recent-events/dj-chrissy-c-11.webp', alt: 'DJ Chrissy C performing in front of a colourful illuminated backdrop' },
+  { src: '/images/recent-events/dj-chrissy-c-12.webp', alt: 'Guests dancing outdoors under string lights, viewed from the DJ decks' },
+  { src: '/images/recent-events/dj-chrissy-c-13.webp', alt: 'Decorated function room with gold balloons and DJ equipment' },
+  { src: '/images/recent-events/dj-chrissy-c-14.webp', alt: 'Decorated celebration tables and DJ setup in a function room' },
 ]
 
 export default function EventsSlideshow() {
@@ -40,23 +45,23 @@ export default function EventsSlideshow() {
   }
 
   return (
-    <section className="py-20 md:py-24 px-6" aria-labelledby="recent-events-heading">
+    <section className="py-20 md:py-24 px-6" aria-labelledby="wedding-photos-heading">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">Behind The Decks</p>
-          <h2 id="recent-events-heading" className="font-display text-5xl md:text-7xl text-white mb-4">
-            Recent DJ Moments
+          <p className="text-[#D4A017] text-xs tracking-[0.3em] uppercase font-semibold mb-4">Wedding Celebrations</p>
+          <h2 id="wedding-photos-heading" className="font-display text-5xl md:text-7xl text-white mb-4">
+            Wedding Moments
           </h2>
           <div className="gold-line mx-auto mb-6" />
           <p className="text-white/50 max-w-xl mx-auto text-sm leading-relaxed">
-            A closer look at the celebrations, dancefloors and DJ setups that bring the music to life.
+            A closer look at the celebrations, dancefloors and DJ setups from weddings with DJ Chrissy C.
           </p>
         </div>
 
         <div
           role="region"
           aria-roledescription="carousel"
-          aria-label="Recent DJ moments photo slideshow"
+          aria-label="Wedding photos slideshow"
           tabIndex={0}
           onKeyDown={handleKeyDown}
           className="outline-none focus-visible:ring-2 focus-visible:ring-[#D4A017]"
