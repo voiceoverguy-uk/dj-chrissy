@@ -8,7 +8,7 @@ A modern, premium DJ website for DJ Chrissy C (djshakeywakey.co.uk) — built wi
 - **Vite 6** for fast dev server and builds (using @vitejs/plugin-react-swc)
 - **Tailwind CSS v4** (via @tailwindcss/vite plugin) for styling
 - **Lucide React** for icons
-- Custom inline SVG for social icons (Instagram, YouTube, WhatsApp)
+- Custom inline SVG for the floating WhatsApp contact button
 
 ## Pages
 
